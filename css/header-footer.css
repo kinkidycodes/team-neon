@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+}
+
+html {
+  font-size: 62.5% !important;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Nunito', sans-serif;
+  background-color: #fff;
+}
+
+.section__header .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 10rem;
+  background-color: #fff;
+}
+
+.section__header .navbar .navbar-nav ul {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.section__header .navbar .navbar-nav ul .nav-list {
+  list-style: none;
+  margin-right: 3rem;
+}
+
+.section__header .navbar .navbar-nav ul .nav-list .nav-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.section__header .navbar .navbar-nav ul .nav-list .nav-link:hover {
+  color: #ffcb16;
+}
+
+.section__header .navbar .toggle-btn-container {
+  display: none;
+}
+
+.section__footer {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 203, 22, 0.93),
+      rgba(255, 203, 22, 0.93)
+    ),
+    url(/Images/footer.jpg);
+  min-height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.section__footer .footer {
+  display: flex;
+  flex-direction: column;
+  padding: 8rem 6rem 0 6rem;
+}
+
+.section__footer .footer .footer-top {
+  display: flex;
+}
+
+.section__footer .footer .footer-top .footer-item {
+  width: 500px;
+}
+
+.section__footer .footer .footer-top .footer-item:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.section__footer .footer .footer-top .hng-hotels-brief .footer-logo {
+  margin-bottom: 3rem;
+}
+
+.section__footer .footer .footer-top .hng-hotels-brief p {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.section__footer .footer .footer-top .hng-hotels-brief .footer-logo img {
+  width: 150px;
+}
+
+.section__footer .footer .footer-top .footer-gallery .gallery-head {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.section__footer .footer .footer-top .footer-gallery .gallery-head h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.section__footer .footer .footer-top .footer-gallery .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3rem;
+}
+
+.section__footer .footer .footer-top .footer-gallery .gallery img {
+  width: 110px;
+  height: 125px;
+}
+
+.section__footer
+  .footer
+  .footer-top
+  .stay-in-touch-container
+  .stay-in-touch-header {
+  text-align: right;
+  margin-bottom: 4rem;
+}
+
+.section__footer
+  .footer
+  .footer-top
+  .stay-in-touch-container
+  .stay-in-touch-header
+  h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.section__footer
+  .footer
+  .footer-top
+  .stay-in-touch-container
+  form
+  .footer-email {
+  display: block;
+  width: 100%;
+  padding: 2rem;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  box-sizing: border-box;
+}
+
+.section__footer
+  .footer
+  .footer-top
+  .stay-in-touch-container
+  form
+  .footer-email::placeholder {
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 0.5px;
+}
+
+.section__footer
+  .footer
+  .footer-top
+  .stay-in-touch-container
+  form
+  .footer-submit {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: 1px solid #000;
+  margin-bottom: 3rem;
+  box-sizing: border-box;
+}
+
+.section__footer .footer .footer-top .stay-in-touch-container p {
+  text-align: right;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.section__footer
+  .footer
+  .footer-top
+  .stay-in-touch-container
+  .social-media-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.section__footer
+  .footer
+  .footer-top
+  .stay-in-touch-container
+  .social-media-icons
+  a {
+  margin-left: 6rem;
+}
+
+.section__footer .footer .footer-bottom {
+  margin-top: 8rem;
+  border-top: 1.5px solid #000;
+}
+
+.section__footer .footer .footer-bottom p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+
+.display-block {
+  display: flex !important;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 576px) {
+  .section__header .navbar {
+    padding: 1rem 2rem !important;
+  }
+
+  .section__header .navbar .navbar-logo img {
+    width: 10rem !important;
+  }
+
+  .section__header .navbar-nav {
+    width: 50% !important;
+  }
+
+  .section__header .navbar .navbar-nav ul .nav-list .nav-link {
+    font-size: 1.3rem;
+  }
+
+  .section__footer .footer .footer-top .footer-item {
+    width: 300px !important;
+  }
+
+  .section__footer .footer .footer-top .hng-hotels-brief .footer-logo img {
+    width: 100px;
+  }
+
+  .section__footer .footer .footer-top .hng-hotels-brief p {
+    font-size: 1.6rem;
+  }
+
+  .section__footer .footer .footer-top .footer-gallery .gallery-head h2 {
+    font-size: 2rem;
+  }
+
+  .section__footer .footer .footer-top .footer-gallery .gallery img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .section__footer .footer .footer-top .footer-item:not(:last-child) {
+    margin-right: 0;
+  }
+  .section__footer
+    .footer
+    .footer-top
+    .stay-in-touch-container
+    .stay-in-touch-header
+    h2 {
+    font-size: 2rem;
+  }
+
+  .section__footer
+    .footer
+    .footer-top
+    .stay-in-touch-container
+    form
+    .footer-email {
+    padding: 1rem;
+  }
+
+  .section__footer
+    .footer
+    .footer-top
+    .stay-in-touch-container
+    form
+    .footer-submit {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .section__footer .footer {
+    padding: 3rem 2rem !important;
+  }
+
+  .section__footer .footer .footer-top .footer-item {
+    width: 260px !important;
+  }
+
+  .section__footer .footer .footer-top .footer-gallery .gallery {
+    grid-gap: 1rem;
+  }
+
+  .section__footer .footer .footer-top .stay-in-touch-container p {
+    font-size: 1.4rem;
+  }
+
+  .section__footer .footer .footer-bottom p {
+    font-size: 1.4rem;
+  }
+}
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .section__header .navbar {
+    padding: 1rem 5rem;
+  }
+}
+
+@media (max-width: 850px) {
+  .section__footer .footer .footer-top {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .section__footer .footer .footer-top .footer-item:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  .section__footer .footer .footer-top .footer-gallery .gallery-head {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    text-align: center;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .section__header .navbar {
+    padding: 1rem 5rem;
+  }
+
+  .section__header .navbar-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100vh;
+    width: 45vw;
+    z-index: 100;
+  }
+
+  .section__header .navbar-nav ul {
+    flex-direction: column;
+    /* margin-top: 2rem; */
+  }
+
+  .section__header .navbar .toggle-btn-container {
+    display: block;
+  }
+
+  .section__header .navbar .toggle-btn-container button {
+    background-color: transparent;
+    border: none;
+  }
+
+  .section__header .navbar .toggle-btn-container button i {
+    font-size: 2rem;
+  }
+
+  .section__header .navbar .toggle-btn-container button:focus {
+    outline: 0;
+  }
+
+  .section__footer .footer {
+    padding: 6rem 4rem 0 4rem;
+  }
+
+  .section__footer .footer .footer-top {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section__footer .footer .footer-top .footer-item {
+    width: 400px;
+  }
+
+  .section__footer
+    .footer
+    .footer-top
+    .stay-in-touch-container
+    .stay-in-touch-header {
+    text-align: left;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .section__header .navbar {
+    padding: 1rem 5rem;
+  }
+}
+
+/* // Extra large devices (large desktops, 1200px and up) */

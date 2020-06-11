@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: Nunito;
+	src: url(../fonts/Nunito.ttf);
+}
+
+@font-face {
+	font-family: Rubik;
+	src: url(../fonts/Rubik.ttf);
+}
+/* #contact {
+	background: linear-gradient(0deg, rgba(255, 203, 22, 0.27), rgba(255, 203, 22, 0.27)), url(../images_contact/top_background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+} */
+
+.overview {
+  width: 100vw;
+  background: linear-gradient(to bottom, rgba(255, 203, 22, 0.3), rgba(255, 255, 255, 1) 95%), url("../Images/cloudyBackground.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overview h1 {
+  line-height: 76px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+  letter-spacing: 0.7rem;
+}
+
+/* .contact-wrapper {
+	position: relative;
+	top: 2em;
+} */
+.contact-wrapper h1 {
+	font-family: Rubik;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 64px;
+	line-height: 76px;
+	text-align: center;
+	letter-spacing: 0.002em;
+  
+    padding: 2em 0;
+}
+
+.helper-info {
+	background: #fff;
+	padding-bottom: 3em;
+}
+
+.location h2,
+.helper-info h2 {
+	text-align: center;
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 48px;
+	line-height: 65px;
+	text-align: center;
+	letter-spacing: 0.002em;
+}
+
+.helper-info p {
+	font-family: Nunito;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	letter-spacing: 0.002em;
+	width: 55%;
+	margin: 0 auto;
+}
+
+.location,
+.contact-form {
+	background: #fff;
+	padding: 2em;
+}
+
+.contact-form label{
+	display: none;
+}
+
+.contact-form > .wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 60%;
+	margin: 0 auto;
+}
+
+input,
+textarea {
+	width: 40%;
+	margin-bottom: 1em;
+	padding: 0.7em 1em;
+}
+
+input[type=submit] {
+	background: #FFCB16;
+	color: #fff;
+	border: none;
+}
+
+.contact-form input:nth-child(n + 5),
+textarea {
+	width: 100%;
+}
+
+.location iframe {
+	width: 100%;
+	margin-top: 1.5em;
+}
